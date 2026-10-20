@@ -1,69 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SparkWave Pro Wash | Pressure Washing</title>
-<meta name="description" content="SparkWave Pro Wash provides professional pressure washing in Gardena and surrounding areas. Call for a free quote!">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SparkWave Pro Wash offers pressure washing in Gardena, California and surrounding areas. Contact us for a free quote.">
+<title>SparkWave Pro Wash | Making Every Surface Shine</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:#16304a;background:#fff;line-height:1.6}
-header{background:#073b70;color:white;padding:20px;text-align:center}
-.logo{font-size:30px;font-weight:bold;letter-spacing:1px}
-.logo span{color:#66ddff}
-nav{margin-top:12px}
-nav a{color:white;text-decoration:none;margin:0 10px;font-weight:bold}
-.hero{padding:75px 20px;text-align:center;color:white;background:linear-gradient(135deg,#063566,#087fbd,#44d4ec)}
-.hero h1{font-size:clamp(32px,6vw,54px);line-height:1.15;margin:0 auto 18px;max-width:850px}
-.hero p{font-size:20px;max-width:650px;margin:0 auto 25px}
-.button{display:inline-block;background:#fff;color:#07528a;padding:13px 24px;border-radius:7px;text-decoration:none;font-weight:bold;margin:5px}
-.button.blue{background:#087fbd;color:white}
-section{padding:48px 20px;max-width:1100px;margin:auto}
-h2{text-align:center;font-size:30px;color:#07528a}
-.intro{text-align:center;max-width:760px;margin:auto}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:25px}
-.card{background:#f0f9ff;border:1px solid #c9eafa;border-radius:12px;padding:22px;text-align:center}
-.icon{font-size:38px}
-.card h3{color:#07528a}
-.band{background:#eaf8ff;max-width:none}
-.band>div{max-width:1000px;margin:auto;text-align:center;padding:0 20px}
-ul{display:inline-block;text-align:left}
-.contactbox{background:#073b70;color:white;border-radius:12px;padding:25px;text-align:center}
-.contactbox h2{color:white}
-footer{background:#042747;color:white;text-align:center;padding:25px}
-a{overflow-wrap:anywhere}
+:root{--navy:#041529;--blue:#087df6;--aqua:#37d9ff;--white:#fff;--muted:#c3dcf0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4faff;color:#112c47;font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}
+.top{background:#041326;color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 5px 25px #0005}.nav{max-width:1200px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:clamp(18px,2.5vw,25px);font-weight:900;letter-spacing:.5px}.brand span{color:var(--aqua)}.navlinks{display:flex;align-items:center;gap:24px;font-weight:bold;font-size:13px}.navlinks a:hover{color:var(--aqua)}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(120deg,#0669e9,#02b5ff);border:1px solid #7ceaff;border-radius:40px;padding:15px 24px;color:#fff;font-weight:800;box-shadow:0 0 18px #00baff6e;transition:transform .2s}.cta:hover{transform:translateY(-2px)}.cta.light{background:white;color:#09345d;box-shadow:0 10px 30px #001c4270;border-color:white}
+.hero{min-height:650px;display:grid;align-items:center;position:relative;overflow:hidden;color:white;background:linear-gradient(90deg,#021329 0%,#042e56f2 40%,#003c6a65 75%,#00132638 100%),url('house.jpg') center/cover no-repeat}
+.hero:after{content:"";position:absolute;bottom:-45px;left:-10%;width:120%;height:90px;border-radius:50%;background:#f4faff;box-shadow:0 -15px 0 #06b9ff9e}
+.hero-inner{max-width:1200px;margin:auto;padding:60px 25px 95px;width:100%;position:relative;z-index:1}.hero-logo{width:min(440px,90%);border-radius:18px;box-shadow:0 14px 45px #0006;margin-bottom:24px}.eyebrow{font-weight:800;letter-spacing:4px;color:#6eeaff;text-transform:uppercase;font-size:13px}.hero h1{font-size:clamp(38px,6.8vw,78px);line-height:1.02;max-width:760px;margin:15px 0;text-shadow:0 5px 20px #0009;text-transform:uppercase}.hero h1 em{font-style:normal;color:#40d9ff}.hero p{font-size:clamp(16px,2vw,21px);max-width:650px;line-height:1.6;color:#edf8ff}.actions{display:flex;gap:15px;flex-wrap:wrap;margin-top:28px}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:32px;color:#d9f5ff;font-size:13px;font-weight:800}.trust span{border-left:3px solid #2ecaff;padding-left:12px}
+.section{max-width:1200px;margin:auto;padding:78px 22px}.section-heading{text-align:center;margin-bottom:35px}.kicker{color:#0287ea;letter-spacing:5px;text-transform:uppercase;font-size:13px;font-weight:900}.section h2{font-size:clamp(29px,4vw,47px);text-transform:uppercase;margin:12px 0;color:#07284c}.section h2 b{color:#008df6}.section-heading p{color:#4e667a;font-size:17px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:#fff;border-radius:18px;padding:30px 24px;border:1px solid #d5eaff;box-shadow:0 14px 32px #043e6b12;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-5px);box-shadow:0 18px 35px #043e6b24}.icon{width:60px;height:60px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(140deg,#0079e6,#36d8ff);font-size:30px;margin-bottom:18px;box-shadow:0 8px 16px #00aaff4a}.card h3{margin:0 0 10px;color:#06345e;font-size:20px}.card p{margin:0;color:#506c83;line-height:1.65}
+.banner{background:linear-gradient(110deg,#02182f,#03589c 65%,#08a7dc);color:white;padding:38px 22px;text-align:center}.banner h2{color:white;margin:0 0 8px;font-size:clamp(24px,4vw,38px)}.banner p{margin:0;color:#cfefff}
+.split{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px}.split img{width:100%;border-radius:22px;box-shadow:0 20px 50px #001b3a35}.split p{line-height:1.8;color:#506c83;font-size:17px}.chips{display:flex;flex-wrap:wrap;gap:10px}.chips span{background:#e3f5ff;border:1px solid #a7ddff;padding:10px 14px;border-radius:30px;color:#07548b;font-weight:700;font-size:13px}
+.contact{background:linear-gradient(125deg,#031428,#063a67 65%,#0078c9);color:#fff;text-align:center;padding:76px 22px}.contact h2{font-size:clamp(30px,5vw,52px);margin:10px auto 15px;max-width:760px}.contact p{color:#d2eafb;font-size:18px}.contact .details{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin:30px 0;color:white;font-weight:bold}.details a{text-decoration:underline;text-decoration-color:#31b9ff;text-underline-offset:5px}footer{background:#020e1e;color:#a9c5db;text-align:center;padding:24px;font-size:13px}
+@media(max-width:760px){.nav{flex-direction:column;gap:13px}.navlinks{gap:13px;flex-wrap:wrap;justify-content:center}.navlinks .cta{padding:10px 14px}.hero{min-height:640px;background-position:58% center}.hero-inner{padding:45px 22px 95px}.cards{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}}@media(max-width:520px){.cards{grid-template-columns:1fr}.hero h1{font-size:42px}.navlinks{font-size:12px}.navlinks a{margin:2px}.hero-logo{max-width:310px}.contact .details{flex-direction:column;gap:15px}}
+
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}.gallery figure{margin:0;background:#fff;border-radius:17px;overflow:hidden;box-shadow:0 12px 30px #003b671c}.gallery img{display:block;width:100%;height:240px;object-fit:cover;object-position:center;transition:transform .25s}.gallery figure:hover img{transform:scale(1.035)}.gallery figcaption{padding:13px 15px;font-weight:750;color:#07345c;font-size:14px}.gallery-note{text-align:center;color:#506c83;margin-top:25px}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.gallery{grid-template-columns:1fr}.gallery img{height:260px}}
 </style>
 </head>
 <body>
-<header>
-<div class="logo">💦 SPARKWAVE <span>PRO WASH</span></div>
-<div>Professional Pressure Washing</div>
-<nav>
-<a href="#services">Services</a>
-<a href="#about">About Us</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<div class="hero">
-<h1>BRINGING THE CLEAN BACK TO YOUR PROPERTY</h1>
-<p>Make your home or business shine with professional pressure washing.</p>
-<p><strong>Serving Gardena &amp; Surrounding Areas</strong></p>
-<a class="button" href="tel:3236677633">📞 Call for a Free Quote</a>
-<a class="button" href="#contact">Get in Touch</a>
-</div>
-
-<section id="services">
-<h2>Our Cleaning Services</h2>
-<p class="intro">Give your property a fresh, clean look with SparkWave Pro Wash.</p>
-<div class="cards">
-<div class="card"><div class="icon">🏠</div><h3>House Washing</h3><p>Refresh your home's exterior and help remove built-up dirt and grime.</p></div>
-<div class="card"><div class="icon">💦</div><h3>Driveways &amp; Walkways</h3><p>Clean up concrete surfaces and improve your property's curb appeal.</p></div>
-<div class="card"><div class="icon">🌿</div><h3>Patios &amp; Fences</h3><p>Give outdoor spaces a cleaner, more inviting appearance.</p></div>
-<div class="card"><div class="icon">🏢</div><h3>Commercial Cleaning</h3><p>Pressure washing options for eligible business exterior surfaces.</p></div>
-</div>
-</section>
-
-<div class="band">
-<div id="about" style="padding-top:35px;padding-bottom:35px">
-<h2>Why Choose SparkWave Pro Wash?</h
+<header class="top"><nav class="nav"><a class="brand" href="#home">💦 SPARK<span>WAVE</span> PRO WASH</a><div class="navlinks"><a href="#home">HOME</a><a href="#services">SERVICES</a><a href="#gallery">OUR WORK</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a><a class="cta" href="tel:+13236677366">☎ FREE QUOTE</a></div></nav></header>
+<main>
+<section id="home" class="hero"><div class="hero-inner"><img class="hero-logo" src="logo.jpg" alt="SparkWave Pro Wash water splash logo"><div class="eyebrow">Professional pressure washing • Gardena, CA</div><h1>Bringing the <em>clean</em> back to your property</h1><p>Give your home or business the fresh, standout look it deserves. Making every surface shine.</p><div class="actions"><a class="cta" href="tel:+13236677366">☎ Call for a Free Quote →</a><a class="cta light" href="#gallery">📷 View Our Work →</a><a class="cta light" href="mailto:info90sparkwavepw@gmail.com?subject=SparkWave%20Pro%20Wash%20Quote%20Request">✉ Get in Touch →</a></div><div class="trust"><span>Residential &amp; commercial</span><span>Gardena &amp; surrounding areas</span><span>Free quote requests</span></div></div></section>
+<section id="services" class="section"><div class="section-heading"><div class="kicker">Our services</div><h2>Professional <b>cleaning solutions</b></h2><p>Fresh surfaces. Bright curb appeal. A clean that stands out.</p></div><div class="cards">
+<article class="card"><div class="icon">🏠</div><h3>House Washing</h3><p>Refresh your home's exterior and help remove built-up dirt and grime.</p></article>
+<article class="card"><div class="icon">🛣️</div><h3>Driveways &amp; Sidewalks</h3><p>Clean up concrete surfaces and make walkways more inviting.</p></article>
+<article class="card"><div class="icon">🏡</div><h3>Roof Soft Washing</h3><p>Ask about gentle exterior roof cleaning options.</p></article>
+<article class="card"><div class="icon">🌿</div><h3>Patios &amp; Decks</h3><p>Give your favorite outdoor spaces a brighter appearance.</p></article>
+<article class="card"><div class="icon">🚪</div><h3>Fences &amp; Gutters</h3><p>Help refresh outdoor features that face the elements every day.</p></article>
+<article class="card"><div class="icon">🏢</div><h3>Commercial Cleaning</h3><p>Ask about exterior cleaning for your business property.</p></article>
+</div></section>
+<div class="banner"><h2>💧 MAKING EVERY SURFACE SHINE</h2><p>Local pressure washing services in Gardena and surrounding areas.</p></div>
+<section id="gallery" class="section"><div class="section-heading"><div class="kicker">Real projects • Real results</div><h2>See <b>Our Work</b></h2><p>A look at our residential pressure washing and exterior cleaning projects.</p></div><div class="gallery"><figure><img src="work-48.jpg" alt="Patio & paver cleaning by SparkWave Pro Wash" loading="lazy"><figcaption>Patio & paver cleaning</figcaption></figure><figure><img src="work-53.jpg" alt="Paver surface washing by SparkWave Pro Wash" loading="lazy"><figcaption>Paver surface washing</figcaption></figure><figure><img src="work-84.jpg" alt="Driveway cleaning project by SparkWave Pro Wash" loading="lazy"><figcaption>Driveway cleaning project</figcaption></figure><figure><img src="work-88.jpg" alt="Residential patio cleaning by SparkWave Pro Wash" loading="lazy"><figcaption>Residential patio cleaning</figcaption></figure><figure><img src="work-92.jpg" alt="Clean side walkway by SparkWave Pro Wash" loading="lazy"><figcaption>Clean side walkway</figcaption></figure><figure><img src="work-107.jpg" alt="Finished exterior at dusk by SparkWave Pro Wash" loading="lazy"><figcaption>Finished exterior at dusk</figcaption></figure><figure><img src="work-106.jpg" alt="Residential driveway project by SparkWave Pro Wash" loading="lazy"><figcaption>Residential driveway project</figcaption></figure><figure><img src="work-76.jpg" alt="Front walkway & landscaping by SparkWave Pro Wash" loading="lazy"><figcaption>Front walkway & landscaping</figcaption></figure></div><p class="gallery-note">Interested in a cleaning project like these? Contact us for a free quote.</p></section>
+<section id="about" class="section split"><div><div class="kicker">The SparkWave look</div><h2>Make your property <b>pop</b></h2><p>At SparkWave Pro Wash, we believe a cleaner exterior makes a great first impression. From driveways to patios and house exteriors, we're here to help you bring back that fresh look.</p><div class="chips"><span>💦 Exterior cleaning</span><span>🏠 Homes &amp; businesses</span><span>📍 Gardena, California</span></div></div><img src="services-art.jpg" alt="SparkWave Pro Wash branded cleaning services artwork"></section>
+<section id="contact" class="contact"><div class="kicker">Let's make it shine</div><h2>Ready for a cleaner, brighter property?</h2><p>Contact SparkWave Pro Wash for a free quote.</p><div class="actions" style="justify-content:center"><a class="cta" href="tel:+13236677366">☎ Call (323) 667-7366</a><a class="cta light" href="mailto:info90sparkwavepw@gmail.com?subject=Free%20Pressure%20Washing%20Quote">✉ Email for a Quote</a></div><div class="details"><span>📍 Gardena, CA &amp; surrounding areas</span><a href="mailto:info90sparkwavepw@gmail.com">info90sparkwavepw@gmail.com</a></div></section>
+</main><footer>© <span id="year"></span> SparkWave Pro Wash · Making Every Surface Shine</footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body></html>
